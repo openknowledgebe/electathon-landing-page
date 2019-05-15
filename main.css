@@ -34,7 +34,7 @@ h1 {
 }
 
 a {
-  color: inherit;
+  color: var(--green);
   text-decoration: none;
 }
 
@@ -81,11 +81,12 @@ main {
 
 a.cta-register {
   padding: 1rem;
-  border: 1px solid var(--green);
+  border: .2rem solid var(--green);
   color: var(--green);
   text-transform: uppercase;
   margin-top: 2rem;
   display: inline-block;
+  font-weight: 600;
 }
 
 .logo-container {
