@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro:700');
-@import './base.css';
 
 :root {
   --black: #333;
@@ -61,8 +60,12 @@ main {
 }
 
 .specifics > div i {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   line-height: 1.6;
+}
+
+.specifics__when {
+  margin-bottom: 3rem;
 }
 
 .specifics__where {
@@ -70,8 +73,11 @@ main {
   justify-content: flex-start;
 }
 
+.specifics__where, .specifics__when {
+  display: flex;
+}
 
-.specifics__where p {
+.specifics__where p, .specifics__when p {
   margin: 0;
 }
 
@@ -95,4 +101,44 @@ a.cta-register {
 
 .logo-container img {
   max-width: 100%;
+}
+
+@media only screen and (max-width: 1050px) {
+  h1 {
+    margin-bottom: .4rem;
+  }
+  .container {
+    width: 90%;
+  }
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .specifics {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .specifics > div {
+    flex-basis: 40%;
+    flex-grow: 0;
+  }
+  a.cta-register {
+    margin-bottom: 2rem;
+  }
+  .about {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .specifics__when {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    font-size: 1.4rem;
+  }
 }
