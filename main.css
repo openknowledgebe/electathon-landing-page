@@ -33,7 +33,7 @@ h1 {
 }
 
 a {
-  color: var(--green);
+  color: var(--green)!important;
   text-decoration: none;
 }
 
@@ -101,6 +101,10 @@ a.cta-register {
 
 .logo-container img {
   max-width: 100%;
+}
+
+.data-title {
+  margin-top: 4rem;
 }
 
 @media only screen and (max-width: 1050px) {
